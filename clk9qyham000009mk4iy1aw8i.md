@@ -91,7 +91,7 @@ class TransactionController extends AbstractController
     public function v1Create(#[MapRequestPayload] CreateTransactionDto $createTransaction): JsonResponse
     {
         return $this->json([
-            'resonse' => 'ok',
+            'response' => 'ok',
             'datetime' => (new DateTimeImmutable('now'))->format('Y-m-d H:i:s'),
             'firstName' => $createTransaction->firstName,
             'lastName' => $createTransaction->lastName,
@@ -123,7 +123,7 @@ curl --request POST \
 < Content-Type: application/json
 
 {
-  "resonse": "ok",
+  "response": "ok",
   "datetime": "2023-07-04 19:36:37",
   "firstName": "Joubert",
   "lastName": "RedRat",
@@ -303,7 +303,7 @@ class TransactionController extends AbstractController
     public function v2Create(CreateTransactionRequest $request): JsonResponse
     {
         return $this->json([
-            'resonse' => 'ok',
+            'response' => 'ok',
             'datetime' => (new DateTimeImmutable('now'))->format('Y-m-d H:i:s'),
             'first_name' => $request->firstName,
             'last_name' => $request->lastName,
@@ -403,7 +403,7 @@ curl --request POST \
 < Content-Type: application/json
 
 {
-  "resonse": "ok",
+  "response": "ok",
   "datetime": "2023-07-01 16:39:48",
   "first_name": "Joubert",
   "last_name": "RedRat",
