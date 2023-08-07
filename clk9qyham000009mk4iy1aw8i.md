@@ -148,7 +148,7 @@ To be able to get a JSON response, you should add a header `Accept: application/
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1691404835024/fa2bcbb4-ca06-4e30-9773-ca09b643c294.png?auto=compress,format&format=webp align="center")
 
-As you can view, the response is in JSON, but, in the Symfony layout. In the next steps, we will do a class in which we can format a JSON response in the layout that we want.
+As you can view, the response is in JSON, but, in the Symfony layout based on RFC 7807. In the next steps, we will do a class in which we can format a JSON response in the layout that we want.
 
 Thanks [**Faizan**](https://twitter.com/faizanakram99) and [**mdeboer**](https://github.com/mdeboer) for the contribution\*\*.\*\*
 
