@@ -142,6 +142,16 @@ The problem is this exception is the default `ValidationFailedException` but as 
 
 With this in mind, we can try a different approach, which will be explained ahead.
 
+**UPDATE August/2023**: After publishing this post and sharing it on Symfony's Slack. **Faizan** and **mdeboer** told me that it's possible to have a JSON response because Symfony has a normalizer for these cases.
+
+To be able to get a JSON response, you should add a header `Accept: application/json`, with this you will get a JSON response, like the example below.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1691404835024/fa2bcbb4-ca06-4e30-9773-ca09b643c294.png?auto=compress,format&format=webp align="center")
+
+As you can view, the response is in JSON, but, in the Symfony layout. In the next steps, we will do a class in which we can format a JSON response in the layout that we want.
+
+Thanks **Faizan** and **mdeboer** for the contribution**.**
+
 ### Abstract Request class
 
 One of the biggest advantages of Symfony is the big and extensive support to DIP "[Dependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle)" by your powerful dependency injection container with autowire support.
